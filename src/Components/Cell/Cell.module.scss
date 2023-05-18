@@ -1,0 +1,24 @@
+// import odpowienidego koloru dla cełego fragmentu 
+// icona w tle absolut
+.container {
+    position: relative;
+    grid-column: span 1;
+    grid-row: span 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 199px;
+    border-radius: 15px;
+}
+
+// kolor w zaleznosci od nth-of-type
+.topColor {}
+
+.content{
+    padding: 31px;
+
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

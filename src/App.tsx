@@ -1,10 +1,12 @@
+import Main from './Components/Main/Main';
+
 import './App.scss';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      Witam
-    </div>
+    <section className="appContainer">
+      <Main />
+    </section>
   );
 }
 
