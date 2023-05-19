@@ -7,10 +7,14 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 354px 1fr;
+    background-color: $color-dark-blue;
+    overflow: hidden;
 }
 
 .reportSummary{
     padding: 31px;
+    background-color: $color-blue;
+    border-radius: 15px;
 }
 
 .timePeroids{
