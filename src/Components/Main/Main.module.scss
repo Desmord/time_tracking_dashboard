@@ -1,6 +1,21 @@
-.container{
+.container {
     display: grid;
-    grid-template-columns: repeat(4,255px);
-    grid-template-rows: repeat(2,244px);
-    gap:30px;
+    grid-template-columns: repeat(4, 255px);
+    grid-template-rows: repeat(2, 244px);
+    gap: 30px;
+}
+
+@media all and (max-width:1100px) {
+    .container {
+        grid-template-columns: repeat(2, 255px);
+        grid-template-rows: repeat(4, 244px);
+        padding-top: 81px;
+    }
+}
+
+@media all and (max-width:530px) {
+    .container {
+        grid-template-columns: repeat(1, 327px);
+        grid-template-rows: 203px repeat(7, 160px);
+    }
 }

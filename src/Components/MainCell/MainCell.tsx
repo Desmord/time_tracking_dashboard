@@ -1,17 +1,29 @@
 import styles from './MainCell.module.scss';
 
-const MainCell = () => {
+const MainCell = ({
+    timeSelected,
+    setSelectedTimePeriod,
+}: {
+    timeSelected: string,
+    setSelectedTimePeriod: React.Dispatch<React.SetStateAction<string>>
+}) => {
     return (
         <section className={styles.container}>
             <div className={styles.reportSummary}>
-                <div>img</div>
-                <div>Report fro</div>
+                <img src="./images/image-jeremy.png" alt="" />
+                <div>Report for</div>
                 <div>Jeremy Robson</div>
             </div>
             <div className={styles.timePeroids}>
-                <div>Daily</div>
-                <div>Weekly</div>
-                <div>Monthly</div>
+                <div
+                    onClick={() => setSelectedTimePeriod(`daily`)}
+                    className={timeSelected === `daily` ? styles.timePeroidsActive : ``}>Daily</div>
+                <div
+                    onClick={() => setSelectedTimePeriod(`weekly`)}
+                    className={timeSelected === `weekly` ? styles.timePeroidsActive : ``}>Weekly</div>
+                <div
+                    onClick={() => setSelectedTimePeriod(`monthly`)}
+                    className={timeSelected === `monthly` ? styles.timePeroidsActive : ``}>Monthly</div>
             </div>
         </section>
     )
