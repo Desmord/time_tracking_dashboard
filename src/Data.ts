@@ -13,7 +13,8 @@ export type TypeData = {
             current: number,
             previous: number
         }
-    }
+    },
+    imgSrc: string,
 }
 
 export const data = [
@@ -32,7 +33,8 @@ export const data = [
                 current: 103,
                 previous: 128
             }
-        }
+        },
+        imgSrc:`./images/icon-work.svg`
     },
     {
         title: `Play`,
@@ -49,7 +51,8 @@ export const data = [
                 current: 23,
                 previous: 29
             }
-        }
+        },
+        imgSrc:`./images/icon-play.svg`    
     },
     {
         title: `Study`,
@@ -66,7 +69,8 @@ export const data = [
                 current: 13,
                 previous: 19
             }
-        }
+        },
+        imgSrc:`./images/icon-study.svg`   
     },
     {
         title: `Exercise`,
@@ -83,7 +87,8 @@ export const data = [
                 current: 11,
                 previous: 18
             }
-        }
+        },
+        imgSrc:`./images/icon-exercise.svg`   
     },
     {
         title: `Social`,
@@ -100,7 +105,8 @@ export const data = [
                 current: 21,
                 previous: 23
             }
-        }
+        },
+        imgSrc:`./images/icon-social.svg`   
     },
     {
         title: `Self Care`,
@@ -117,6 +123,7 @@ export const data = [
                 current: 7,
                 previous: 11
             }
-        }
+        },
+        imgSrc:`./images/icon-self-care.svg`   
     }
 ]

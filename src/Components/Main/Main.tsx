@@ -8,7 +8,7 @@ import styles from './Main.module.scss';
 
 const Main = () => {
 
-    const [selectedTimePeriod, setSelectedTimePeriod] = useState(`daily`);
+    const [selectedTimePeriod, setSelectedTimePeriod] = useState(`weekly`);
 
     return (
         <section className={styles.container}>
@@ -17,7 +17,10 @@ const Main = () => {
                 setSelectedTimePeriod={setSelectedTimePeriod}
             />
             {data.map((data: TypeData, index: number) => {
-                return <Cell timePeroid={selectedTimePeriod} key={index} />
+                return <Cell
+                    data={data}
+                    timePeroid={selectedTimePeriod}
+                    key={index} />
             })}
         </section>
     )
